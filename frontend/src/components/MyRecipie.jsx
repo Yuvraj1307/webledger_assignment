@@ -184,7 +184,7 @@ import {
       }
       
 
-      fetch(`http://localhost:4500/recipie/my`,{
+      fetch(`https://webledgerassignment.onrender.com/recipie/my`,{
         method:"PATCH",
         headers:{
           "Content-type":"application/json",
@@ -224,7 +224,7 @@ import {
     //     .catch((err) => console.log(err));
     // }
   function Unsave(el){
-    fetch(`http://localhost:4500/recipie/my/${el.id}`,{
+    fetch(`https://webledgerassignment.onrender.com/recipie/my/${el.id}`,{
       method:"DELETE",
       headers:{
         "Content-type":"application/json",

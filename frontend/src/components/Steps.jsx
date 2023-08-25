@@ -17,7 +17,7 @@ function Steps(){
     console.log(id)
 useEffect(()=>{
         axios
-        .get(`http://localhost:4500/recipie/steps/${id}`,{
+        .get(`https://webledgerassignment.onrender.com/recipie/steps/${id}`,{
           headers:{
               Authorization: `Bearer ${sessionStorage.getItem("token")}`,
           }

@@ -2,7 +2,7 @@ import axios from "axios";
 
 function SaveData(el){
   axios
-  .post('http://localhost:4500/recipie', el,{
+  .post('https://webledgerassignment.onrender.com/recipie', el,{
     headers:{
         Authorization: `Bearer ${sessionStorage.getItem("token")}`,
     }

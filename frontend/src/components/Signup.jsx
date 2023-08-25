@@ -71,7 +71,7 @@ export default function Signup() {
       setLoading(true);
       let obj = { name, email, password };
       axios
-        .post('http://localhost:4500/user/register', obj)
+        .post('https://webledgerassignment.onrender.com/user/register', obj)
         .then((res) =>{
           console.log(res)
           setLoading(false);

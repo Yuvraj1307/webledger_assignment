@@ -172,7 +172,7 @@ const ArticleList = () => {
     }
 
     axios
-      .get(`http://localhost:4500/recipie/${page}`)
+      .get(`https://webledgerassignment.onrender.com/recipie/${page}`)
       .then((res) => {
         setAllRecipie(res.data.results);
       })
@@ -185,7 +185,7 @@ const ArticleList = () => {
          setSearch(e.target.value)
    }else{
  setLoad(true);
-      axios.get(`http://localhost:4500/recipie/search/${query}`, {
+      axios.get(`https://webledgerassignment.onrender.com/recipie/search/${query}`, {
        headers: {
          Authorization: `Bearer ${sessionStorage.getItem("token")}`,
        },
@@ -213,7 +213,7 @@ const ArticleList = () => {
       }
     }
     axios
-      .get(`http://localhost:4500/recipie/${page + 1}`)
+      .get(`https://webledgerassignment.onrender.com/recipie/${page + 1}`)
       .then((res) => {
          setAllRecipie(res.data.results);
       })
